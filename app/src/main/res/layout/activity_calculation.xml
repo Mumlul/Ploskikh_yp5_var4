@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Credit"
+    android:orientation="vertical"
+    android:background="@drawable/bb">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:text="Кредитный калькулятор"
+        android:textSize="24dp"
+        android:layout_gravity="center"
+        />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/round_background"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp">
+            <TextView
+                android:id="@+id/sum1"
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:text="Сумма кредита"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                android:textSize="18dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/srok1"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:background="@drawable/wh"
+            android:text="срок кредита"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"
+            />
+        <TextView
+            android:id="@+id/textViewResult2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:background="@drawable/wh"
+            android:text="ежемесячный платеж"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            />
+        <Button
+            android:id="@+id/button1"
+            android:background="@drawable/button_reg"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="@string/Reg"
+            android:textAllCaps="false"
+            android:onClick="back"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            />
+
+</LinearLayout>
