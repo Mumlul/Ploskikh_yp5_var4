@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Yp" parent="Theme.AppCompat.DayNight.DarkActionBar" />
+    <style name="Theme.Yp" parent="Theme.AppCompat.DayNight.DarkActionBar" >
+    <item name="colorPrimary">@color/light_green</item>
+    </style>
 </resources>

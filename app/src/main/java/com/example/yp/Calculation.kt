@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 
 class Calculation : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ class Calculation : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculation)
 
-        sum1 = findViewById(R.id.sum1)
+        sum1 = findViewById(R.id.sum2)
         srok1 = findViewById(R.id.srok1)
         textViewResult2 = findViewById(R.id.textViewResult2)
 
@@ -23,9 +24,12 @@ class Calculation : AppCompatActivity() {
         val rec2=intent.getStringExtra("monthInput")
         val rec3=intent.getStringExtra("result")
 
-        sum1.text=rec1
-        srok1.text=rec2
-        textViewResult2.text=rec3
+        sum1.setText(rec1.toString())
+        srok1.setText(rec2)
+        textViewResult2.setText("Ежемесячный платеж:"+rec3.toString())
+
+
+
 
 
     }
@@ -33,7 +37,6 @@ class Calculation : AppCompatActivity() {
 
     fun back()
     {
-
         val intent = Intent(this,Bank::class.java)
         startActivity(intent)
     }

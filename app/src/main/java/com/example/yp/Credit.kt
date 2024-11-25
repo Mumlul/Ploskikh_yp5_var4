@@ -8,6 +8,7 @@ import android.widget.SeekBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.coroutines.*
 
 class Credit : AppCompatActivity() {
     lateinit var text:TextView
@@ -43,7 +44,7 @@ class Credit : AppCompatActivity() {
             return
         }
         else if(monthInput.toInt()<=0){
-            Toast.makeText(this,"Месяц должен быть положительным числом", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"Минимальное значение 1", Toast.LENGTH_LONG).show()
             return
         }
         val result: Double
@@ -66,7 +67,10 @@ class Credit : AppCompatActivity() {
         Toast.makeText(this,"ежемесячный платеж = ${result/1000} тысяч",Toast.LENGTH_LONG).show()
 
 
-        val intent = Intent(this,Calculation::class.java).putExtra("result",result/1000).putExtra("amount",amount).putExtra("monthInput",monthInput)
+
+
+
+            val intent = Intent(this,Calculation::class.java).putExtra("result",(result/1000).toString()).putExtra("amount",amount.toString()).putExtra("monthInput",monthInput)
         startActivity(intent)
     }
 

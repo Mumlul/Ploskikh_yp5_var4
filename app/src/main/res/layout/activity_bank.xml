@@ -29,6 +29,7 @@
         android:textSize="14dp"
         android:textStyle="bold"/>
     <EditText
+        android:textColor="@color/black"
         android:id="@+id/login"
         android:layout_marginTop="14dp"
         android:layout_width="282dp"
@@ -38,6 +39,7 @@
         android:layout_marginLeft="55dp"
         android:hint="@string/login"/>
     <EditText
+        android:textColor="@color/black"
         android:id="@+id/password"
         android:inputType="textPassword"
         android:layout_marginTop="41dp"

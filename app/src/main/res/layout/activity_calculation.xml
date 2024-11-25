@@ -34,10 +34,22 @@
                 android:text="Сумма кредита"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textColor="@color/black"
 
+                android:textColor="@color/black"
                 android:textSize="18dp"
                 />
+            <TextView
+                android:id="@+id/sum2"
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:text="1"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                />
+
 
 
 
@@ -64,8 +76,9 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:layout_gravity="center"
-            android:background="@drawable/wh"
             android:text="ежемесячный платеж"
+            android:background="@drawable/wh"
+
             android:textStyle="bold"
             android:layout_marginTop="50dp"
             />
